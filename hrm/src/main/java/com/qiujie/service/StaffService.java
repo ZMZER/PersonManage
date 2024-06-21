@@ -56,7 +56,8 @@ public class StaffService extends ServiceImpl<StaffMapper, Staff> {
     public ResponseDTO add(Staff staff) {
         if (save(staff)) {
             // 设置默认密码、工号
-            staff.setPassword(passwordEncoder.encode("123")).setCode("staff_" + staff.getId());
+            staff.setPassword(passwordEncoder.encode("123"))
+                    .setCode("staff_" + staff.getId());
             updateById(staff);
             return Response.success();
         }
