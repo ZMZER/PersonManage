@@ -1,5 +1,5 @@
 server:
-  port: 8888
+ port: 8888
 
 spring:
   # 配置数据源
@@ -34,7 +34,7 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   # 扫描通用枚举包
-  type-enums-package: com.qiujie.enums
+  type-enums-package: com.zzzy.enums
 
 
 file-path: D:/project/idea/hrm/file/ # 文件存储位置
